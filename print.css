@@ -189,6 +189,14 @@ html, body {
 }
 
 /* Formação, Idiomas, Competências, Ferramentas */
+.education {
+  margin-top: 12px;
+}
+
+.ferramentas {
+  margin-top: 12px;
+}
+
 .edu-item h3,
 .idioma-list li,
 .idioma-list li strong {
