@@ -1,0 +1,306 @@
+/* ============================================
+   PRINT STYLES - Currículo Grégori Vallim Braga
+   Aplica apenas na impressão / salvar PDF
+   ============================================ */
+
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+html, body {
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-size: 9pt;
+  line-height: 1.35;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: auto !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+/* Cabeçalho web: oculto na impressão */
+.header-web {
+  display: none !important;
+}
+
+/* Cabeçalho de impressão: visível apenas na impressão */
+.header-print {
+  display: block !important;
+}
+
+.main-header::before {
+  display: none !important;
+}
+
+.name-wrapper {
+  display: block;
+  text-align: left;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.name-wrapper h1 {
+  font-size: 20pt;
+  color: #000000 !important;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+
+.name-wrapper strong {
+  font-size: 20pt;
+  color: #000000 !important;
+  display: inline;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: static !important;
+  top: auto !important;
+}
+
+.name-wrapper .sobrenome {
+  font-size: 20pt;
+  color: #000000 !important;
+  margin-left: 12px !important;
+  margin-right: 0 !important;
+  display: inline;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.name-wrapper .cargos {
+  font-size: 8.5pt;
+  color: #333333 !important;
+  margin-left: 0 !important;
+  margin-top: 2px;
+  text-align: justify;
+  width: 100%;
+}
+
+.cargos .ns,
+.cargos .dg,
+.cargos .op {
+  margin: 0 4px !important;
+}
+
+/* Container sem sombra e sem bordas arredondadas */
+.cv-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: auto !important;
+  height: auto !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  overflow: visible;
+  margin: 0 !important;
+}
+
+/* Sidebar sem fundo cinza */
+.sidebar {
+  flex: 0 0 30%;
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 12px;
+  min-width: 0;
+}
+
+.sidebar h2 {
+  font-size: 8.5pt;
+  color: #000000 !important;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.sidebar::before {
+  display: none !important;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 137px;
+  height: 137px;
+  border: 2px solid #000000;
+  margin-bottom: 6px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 8pt;
+  color: #000000 !important;
+}
+
+.contact li {
+  font-size: 8pt;
+  color: #000000 !important;
+  margin-bottom: 6px;
+}
+
+.contact a {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.icon-location,
+.icon-email,
+.icon-phone,
+.icon-linkedin,
+.icon-github {
+  fill: #000000 !important;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.icon-location path,
+.icon-email path,
+.icon-phone path,
+.icon-linkedin path,
+.icon-github path {
+  fill: #000000 !important;
+}
+
+.copy-tag {
+  display: none !important;
+}
+
+/* Formação, Idiomas, Competências, Ferramentas */
+.edu-item h3,
+.idioma-list li,
+.idioma-list li strong {
+  color: #000000 !important;
+}
+
+.edu-item h3 {
+  font-size: 9pt;
+}
+
+.edu-item p {
+  font-size: 8pt;
+  color: #000000 !important;
+}
+
+.idioma-list li {
+  font-size: 8pt;
+  margin-bottom: 4px;
+}
+
+.skill-list li {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000;
+  font-size: 7.5pt;
+  padding: 2px 6px;
+  margin-bottom: 3px;
+}
+
+/* Main sem fundo */
+.main {
+  flex: 1;
+  padding: 12px;
+  min-width: 0;
+  background: #ffffff !important;
+}
+
+.main h2 {
+  font-size: 10pt;
+  color: #000000 !important;
+  border-left: 2px solid #000000;
+  padding-left: 6px;
+  margin-bottom: 8px;
+}
+
+.main > section {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.main > section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.summary p {
+  font-size: 8.5pt;
+  color: #000000 !important;
+  margin-bottom: 6px;
+}
+
+.disponibilidade {
+  padding: 0;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-left: none !important;
+}
+
+/* Experiências */
+.job {
+  margin-bottom: 12px;
+}
+
+.job h3 {
+  font-size: 9pt;
+  color: #000000 !important;
+}
+
+.job .date {
+  font-size: 8pt;
+  color: #333333 !important;
+}
+
+.job h4 {
+  font-size: 8.5pt;
+  color: #000000 !important;
+}
+
+.job .location {
+  font-size: 8pt;
+  color: #333333 !important;
+}
+
+.job ul {
+  font-size: 8pt;
+  color: #000000 !important;
+  margin-left: 14px;
+}
+
+.job ul li {
+  margin-bottom: 2px;
+}
+
+/* Botão de imprimir some */
+.print-btn {
+  display: none !important;
+}
+
+/* Garantir que caiba em uma página */
+.main > section,
+.sidebar {
+  page-break-inside: auto;
+}

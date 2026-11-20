@@ -1,0 +1,9 @@
+# Artefatos locais/testes
+*.pdf
+
+# Sistema/editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
